@@ -1,0 +1,22 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+def reverseArray(arr):
+    return arr[::-1]    # Reverse the array using slicing
+
+# Input: number of elements in the array
+n = int(input())
+
+# Input: the array elements
+arr = list(map(int, input().split()))
+
+# Call the function to reverse the array
+reversed_arr = reverseArray(arr)
+
+# Print the reversed array as space-separated integers
+print(*reversed_arr)
