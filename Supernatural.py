@@ -18,4 +18,5 @@ def count_supernatural_numbers(n):
 
 # Input lena
 n = int(input())
+
 print(count_supernatural_numbers(n))
