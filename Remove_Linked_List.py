@@ -7,4 +7,5 @@ class Solution:
         head.next.next = head  # Make next node point to current node
         head.next = None  # Break old link
         
-        return new_head  # Return new head of the reversed list
+        return new_head  
+        # Return new head of the reversed list
