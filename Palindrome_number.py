@@ -1,8 +1,5 @@
-from typing import List
-
 class Solution:
-    def firstPalindrome(self, words: List[str]) -> str:
-        for word in words:
-            if word == word[::-1]:  # Check if the word is a palindrome
-                return word  # Return the first palindromic word
-        return ""  # Return an empty string if no palindrome is found
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0:  # Negative numbers cannot be palindromes
+            return False
+        return str(x) == str(x)[::-1]  # Convert to string and compare with its reverse
